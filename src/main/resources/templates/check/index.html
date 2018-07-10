@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset ="UTF-8" />
+<title>Index page</title>
+</head>
+<body>
+<div>
+    <form th:action="@{/tweet/index}" method="post">
+      <h2> **佐藤ゼミ卒論調査** </h2>
+       <input placeholder="名前" type="text" name="name" value="" />
+       <input placeholder="店舗名" type="text" name="store" value="" />
+       <input type="submit" value="SEND" />
+    </form>
+    <p></p>
+     <a class="post" href="/check/list">一覧</a>
+  </div>
+</body>
+</html>
